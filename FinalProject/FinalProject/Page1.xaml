@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalProject.Page1">
+    <ContentPage.Content>
+        
+        
+        
+        
+        
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label Text="Choose your Magic and Character" HorizontalOptions="CenterAndExpand" TextColor="Black" FontSize="22" FontAttributes="Bold,Italic" Margin="10" />
+
+            <ImageButton HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent" HeightRequest="140" WidthRequest="200" Margin="15"
+                      Source="FirstPage2.png" Clicked="ImageButton_Clicked_1"/>
+
+            <ImageButton HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent" HeightRequest="140" WidthRequest="200" Margin="15"
+                      Source="FirstPage.png" Clicked="ImageButton_Clicked" />
+            <ImageButton HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent" HeightRequest="140" WidthRequest="200" Margin="15"
+                      Source="likebutton.png" Clicked="ImageButton_Clicked_2"/>
+          
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

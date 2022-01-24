@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:vm="clr-namespace:FinalProject"
+             x:Class="FinalProject.SecondPage">
+    <ContentPage.BindingContext>
+        <vm:MainViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout>
+       
+        <Label Text="Characters" HorizontalOptions="CenterAndExpand" TextColor="Black" FontSize="22" FontAttributes="Bold,Italic" Margin="15" />
+
+
+        <CarouselView ItemsSource="{Binding characters}"  >
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Frame HeightRequest="500" WidthRequest="180"
+                   BackgroundColor="WhiteSmoke" Padding="0"
+                   HasShadow="True" Margin="10" CornerRadius="50"
+                   HorizontalOptions="CenterAndExpand">
+                        <Grid>
+                            <StackLayout>
+                                <Image Source="{Binding imgSource}"
+                           HeightRequest="500" Opacity="0.9"
+                           Aspect="AspectFit"/>
+                            </StackLayout>
+                            <StackLayout Margin="0,0,0,10">
+
+                                <Image Source="likebtn.png"
+                           Aspect="AspectFit"
+                           HorizontalOptions="EndAndExpand"
+                           Margin="10,0,11,0"
+                           HeightRequest="50" Opacity="0.8"/>
+
+                                <Label Text="{Binding Name}" TextColor="Black" FontSize="18"
+                           FontAttributes="Bold" Margin="15,0" 
+                           VerticalOptions="EndAndExpand"/>
+
+                                <StackLayout Orientation="Horizontal" Margin="15,-8,0,0">
+                                    <Image Source="likebtn1.png"
+                           Aspect="AspectFit"
+                           HeightRequest="40" Opacity="0.8" Margin="-5,0"/>
+                                    <Label Text="{Binding Gender}" TextColor="Black" FontSize="14"
+                           FontAttributes="None" Margin="10"
+                           VerticalOptions="EndAndExpand"/>
+                                    <Label Text="{Binding Job}" TextColor="Black" FontSize="14"
+                           FontAttributes="None" Margin="10"
+                           VerticalOptions="EndAndExpand"/>
+                                    <Label Text="{Binding House}" TextColor="Black" FontSize="14"
+                           FontAttributes="None" Margin="10"
+                           VerticalOptions="EndAndExpand"/>
+                                    <Label Text="{Binding Birth}" TextColor="Black" FontSize="14"
+                           FontAttributes="None" Margin="10"
+                           VerticalOptions="EndAndExpand"/>
+                                  
+                                </StackLayout>
+
+
+                                <StackLayout Orientation="Horizontal" Margin="0,0,0,0">
+
+                                    <Label Text="{Binding Wand}" TextColor="Black" FontSize="14"
+                           FontAttributes="None" Margin="15,0,0,30"
+                           VerticalOptions="EndAndExpand"/>
+                                    <Label Text="{Binding Patronus}" TextColor="Black" FontSize="14"
+                           FontAttributes="None" Margin="15,0,0,30"
+                           VerticalOptions="EndAndExpand"/>
+                                    <Label Text="{Binding Skills}" TextColor="Black" FontSize="14"
+                           FontAttributes="None"  Margin="15,0,0,30"
+                           VerticalOptions="EndAndExpand"/>
+                                </StackLayout>
+
+
+
+                            </StackLayout>
+
+
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+                
+            </CarouselView.ItemTemplate>
+            
+            
+            
+            
+        </CarouselView>
+        
+        
+        
+        
+           
+            
+            
+            
+            
+      
+
+
+    </StackLayout>
+</ContentPage>

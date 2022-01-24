@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:myTabbed="clr-namespace:FinalProject"
+             
+            BarBackgroundColor="WhiteSmoke"
+            
+            HeightRequest="100"
+             x:Class="FinalProject.MyTabbed">
+
+
+    
+
+
+
+    <TabbedPage.Children >
+
+
+
+        <myTabbed:SecondPage IconImageSource="FirstPage.png" ></myTabbed:SecondPage>
+
+        <myTabbed:MagicPage   IconImageSource="FirstPage2.png"></myTabbed:MagicPage>
+
+        <myTabbed:FavPage   IconImageSource="likebutton.png"></myTabbed:FavPage>
+
+
+
+    </TabbedPage.Children>
+
+
+</TabbedPage>
